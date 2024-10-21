@@ -1,0 +1,27 @@
+weight = 41.5
+ground_cost = 20.00 + 4.00 * weight
+prem_ground_cost = 125 + weight
+drone_shipping = weight * 4.50 + 0
+#Ground Shipping
+# 8.4lbx $4.00+ $20.00= $53.60 (formula)
+
+if weight in (1, 2):
+    answer = ground_cost
+elif weight in (3, 4, 5):
+    answer = ground_cost
+elif weight in (6, 7, 8, 9, 10):
+    answer = ground_cost
+else:
+    answer = ground_cost
+print('Ground shipping $' + str( ground_cost))
+print("Premium shipping $" + str( prem_ground_cost))
+#DRONE SHIPPING
+if weight in (1, 2):
+ answer = drone_shipping
+if weight in (2, 3, 4, 5, 6):
+  answer = drone_shipping
+if weight in (7, 8, 9, 10):
+  answer = drone_shipping
+else:
+  answer = drone_shipping
+print('Drone Shipping $' + str(drone_shipping))
