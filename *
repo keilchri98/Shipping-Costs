@@ -1,6 +1,6 @@
 #Edit the weight to fit your needs 
 weight = 41.5
-#can change the formulas of ground/prem/drone shipping to match your companies prices
+#can change the formulas of ground/prem/drone shipping to match the prices at your company
 ground_cost = 20.00 + 4.00 * weight
 prem_ground_cost = 125 + weight
 drone_shipping = weight * 4.50 + 0
